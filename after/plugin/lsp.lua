@@ -10,6 +10,14 @@ lsp.ensure_installed({
 })
 
 -- Fix Undefined global 'vim'
+lsp.configure('tsserver', {
+    settings = {
+        completions = {
+            completeFunctionCalss = true
+        }
+    }
+})
+
 lsp.configure('sumneko_lua', {
     settings = {
         Lua = {
@@ -41,7 +49,7 @@ lsp.setup_nvim_cmp({
 })
 
 lsp.set_preferences({
-    suggest_lsp_servers = false,
+    suggest_lsp_servers = true,
     sign_icons = {
         error = 'E',
         warn = 'W',

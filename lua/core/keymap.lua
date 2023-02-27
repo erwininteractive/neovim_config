@@ -2,8 +2,10 @@ vim.g.mapleader = " "
 
 vim.keymap.set('n', '<leader>c', '"+y')
 vim.keymap.set('n', '<leader>p', '"+p')
+vim.keymap.set('n', '<leader>w', vim.cmd.Ex)
 vim.keymap.set('n', '<leader>e', vim.cmd.NvimTreeToggle)
 vim.keymap.set('n', '<leader>gg', vim.cmd.LazyGit)
+vim.keymap.set('n', '<leader>ss', ':w')
 
 vim.keymap.set('v', '<leader>c', '"+y')
 vim.keymap.set('v', 'J', ":m '>+1<CR>gv=gv")
