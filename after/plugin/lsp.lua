@@ -4,7 +4,6 @@ lsp.preset("recommended")
 
 lsp.ensure_installed({
     'tsserver',
-    'sumneko_lua',
     'rust_analyzer',
     'phpactor'
 })
@@ -14,16 +13,6 @@ lsp.configure('tsserver', {
     settings = {
         completions = {
             completeFunctionCalss = true
-        }
-    }
-})
-
-lsp.configure('sumneko_lua', {
-    settings = {
-        Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
         }
     }
 })

@@ -1,5 +1,3 @@
-vim.cmd.packadd('packer.nvim')
-
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
     use 'nvim-tree/nvim-web-devicons'
@@ -47,7 +45,8 @@ return require('packer').startup(function(use)
     use 'leoluz/nvim-dap-go'
     use 'mfussenegger/nvim-dap-python'
     use { 'jbyuki/one-small-step-for-vimkind', module = 'osv' }
-    use { 'akinsho/toggleterm.nvim', tag = '*', config = function() 
+    use {
+        'akinsho/toggleterm.nvim', tag = '*', config = function()
             require('toggleterm').setup()
         end}
 end)
